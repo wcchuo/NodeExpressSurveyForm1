@@ -1,0 +1,19 @@
+<html>
+<head>
+ <title>Your Comments</title>
+ <link href='style.css' type="text/css" rel="stylesheet" />
+</head>
+<body>
+ <div class="container">
+ <h3>Submitted Information</h3>
+ <% for (var x in user) { %>
+    <label>Your Name: </label><%= user[x].name %></br>
+    <label>Location: </label><%= user[x].location %></br>
+    <label>Language: </label><%= user[x].language %></br>
+    <label>Comment: </label><%= user[x].comment %></br>
+ <% } %>
+    </br>
+    <a href='/' class='button pull-right'>Go Back</a>
+ </div>
+</body>
+</html>
